@@ -1,0 +1,43 @@
+.TopBar {
+  padding: 20px 30px;
+  background-color: #ffffff80;
+  backdrop-filter: blur(15px);
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.TopBar h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.TopBar a {
+  color: #006E90;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 770px) {
+  .TopBar {
+    padding: 15px 25px;
+  }
+
+  .TopBar h1 {
+    font-size: 1.5rem;
+  }
+
+  .TopBar a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 570px) {
+  span.title {
+    display: none;
+  }
+}
