@@ -1,0 +1,12 @@
+.Main {
+  background-color: #ffffff95;
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+  border-radius: 15px;
+}
