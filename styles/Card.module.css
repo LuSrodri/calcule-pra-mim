@@ -9,7 +9,7 @@
   height: 300px;
   border-radius: 15px;
   margin: 25px;
-  transition: 200ms;
+  text-align: center;
 }
 
 .Card:hover {
@@ -33,4 +33,9 @@
 
 .Card h3 {
   margin: 0;
+}
+
+.Card hr {
+  width: 90%;
+  margin: 30px 0;
 }

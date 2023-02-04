@@ -16,15 +16,6 @@
   font-size: 1.75rem;
 }
 
-.TopBar a {
-  color: #fff;
-  background-color: #000;
-  padding: 15px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
 @media (max-width: 770px) {
   .TopBar {
     padding: 15px 25px;
