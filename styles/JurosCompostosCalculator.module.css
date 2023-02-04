@@ -1,0 +1,59 @@
+.JurosCompostosCalculator {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffffff95;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.Calculator,
+.Infos {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.JurosCompostosCalculator p,
+.JurosCompostosCalculator input {
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.Input p {
+    font-weight: 700;
+}
+
+.Input input {
+    width: 150px;
+    padding: 10px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+}
+
+.Infos p, .Infos h2 {
+    text-align: justify;
+}

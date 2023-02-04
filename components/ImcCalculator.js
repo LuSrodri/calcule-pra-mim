@@ -21,7 +21,7 @@ export default function ImcCalculator() {
         }
 
         if (altura !== 0 && !isNaN(altura) && peso !== 0 && !isNaN(peso)) {
-            calculeteImc();
+            calculateImc();
             return;
         }
         setImc(0);
@@ -31,6 +31,9 @@ export default function ImcCalculator() {
         if (e.key === "Enter") {
             if (e.target.id === "altura") {
                 document.getElementById("peso").focus();
+            }
+            if (e.target.id === "peso") {
+                document.getElementById("resultado").scrollIntoView({behavior: 'smooth'});
             }
         }
     }
@@ -51,7 +54,7 @@ export default function ImcCalculator() {
         setPeso(0);
     }
 
-    function calculeteImc() {
+    function calculateImc() {
         setImc(Number((peso / ((altura / 100) * (altura / 100))).toFixed(1)));
         if (imc < 18.5) {
             setClassificacao("abaixo do peso");
@@ -86,7 +89,7 @@ export default function ImcCalculator() {
                     </div>
                     <div className={styles.Input}>
                         <p><FontAwesomeIcon icon={faWeightScale} />  Insira o peso em quilogramas</p>
-                        <input onInput={onInputPeso} id={"peso"} type={'number'}></input>
+                        <input onInput={onInputPeso} onKeyUp={onEnter} id={"peso"} type={'number'}></input>
                     </div>
                 </div>
                 {(imc !== 0 && !isNaN(imc)) &&
