@@ -10,18 +10,18 @@ export default function Home() {
       <Head>
         <title>Calculadoras que ajudam você - Calcule pra mim!</title>
 
-        <meta name="description" content="Calculadoras que ajudam você. Calculadora de IMC, peso ideal." />
-        <meta name="keywords" content="calcule, calculadora, calculadoras, imc, peso, ideal, massa, corporal, índice, lusrodri, ajudar, ajudarem, altura, kg, saúde, pra, mim, ajudam" />
+        <meta name="description" content="Calculadoras que ajudam você. Calculadora de IMC, peso ideal, juros compostos e datas." />
+        <meta name="keywords" content="calcule, calculadora, calculadoras, imc, peso, ideal, massa, corporal, índice, lusrodri, ajudar, ajudarem, altura, kg, saúde, pra, mim, ajudam, juros, compostos, datas, diferencas" />
 
         <meta property="og:title" content="Calculadoras que ajudam você - Calcule pra mim!" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Calculadoras que ajudam você. Calculadora de IMC, peso ideal." />
+        <meta property="og:description" content="Calculadoras que ajudam você. Calculadora de IMC, peso ideal, juros compostos e datas." />
         <meta property="og:url" content="https://calculepramim.com" />
-        <meta property="og:image" content="/calcule-pra-mim-logo.png" />
+        <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
         <meta name="twitter:title" content="Calculadoras que ajudam você - Calcule pra mim!" />
-        <meta name="twitter:description" content="Calculadoras que ajudam você. Calculadora de IMC, peso ideal." />
-        <meta name="twitter:image" content="/calcule-pra-mim-logo.png" />
+        <meta name="twitter:description" content="Calculadoras que ajudam você. Calculadora de IMC, peso ideal, juros compostos e datas." />
+        <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />

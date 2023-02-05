@@ -19,11 +19,11 @@ export default function JurosCompostos() {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Calcule investimentos em juros compostos e descubra o poder do tempo." />
         <meta property="og:url" content="https://calculepramim.com/juroscompostos" />
-        <meta property="og:image" content="/calcule-pra-mim-logo.png" />
+        <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
         <meta name="twitter:title" content="Calcule investimentos em juros compostos - Calcule pra mim!" />
         <meta name="twitter:description" content="Calcule investimentos em juros compostos e descubra o poder do tempo." />
-        <meta name="twitter:image" content="/calcule-pra-mim-logo.png" />
+        <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -19,11 +19,11 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Calcule o IMC, Índice de Massa Corporal, e descubra o Peso Ideal." />
         <meta property="og:url" content="https://calculepramim.com/imc" />
-        <meta property="og:image" content="/calcule-pra-mim-logo.png" />
+        <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
         <meta name="twitter:title" content="Calcule o IMC e o peso ideal - Calcule pra mim!" />
         <meta name="twitter:description" content="Calcule o IMC, Índice de Massa Corporal, e descubra o Peso Ideal." />
-        <meta name="twitter:image" content="/calcule-pra-mim-logo.png" />
+        <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
