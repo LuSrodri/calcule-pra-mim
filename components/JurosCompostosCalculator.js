@@ -34,7 +34,6 @@ export default function JurosCompostosCalculator() {
             }
             if (e.target.id === "tempo") {
                 document.getElementById("resultado").scrollIntoView({ behavior: 'smooth' });
-                console.log("indo para resultado");
             }
         }
     }
