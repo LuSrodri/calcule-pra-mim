@@ -19,11 +19,11 @@ export default function DiferencaDatas() {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Calcule a diferença de tempo entre duas datas." />
         <meta property="og:url" content="https://calculepramim.com/diferencadatas" />
-        <meta property="og:image" content="/calcule-pra-mim-logo.png" />
+        <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
         <meta name="twitter:title" content="Calcule investimentos em juros compostos - Calcule pra mim!" />
         <meta name="twitter:description" content="Calcule a diferença de tempo entre duas datas." />
-        <meta name="twitter:image" content="/calcule-pra-mim-logo.png" />
+        <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
