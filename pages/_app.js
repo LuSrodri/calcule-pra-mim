@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-ZEYP70KP8E" />
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="gtag">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
