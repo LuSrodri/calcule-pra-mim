@@ -82,6 +82,7 @@ export default function ImcCalculator() {
         <div className={styles.ImcCalculator}>
             <div className={styles.Calculator}>
                 <h2><FontAwesomeIcon icon={faAppleWhole} /> Calculadora</h2>
+                <p>Entre com o seu peso e altura, calcule o índice de massa corporal e encontre o seu peso ideal.</p>
                 <div className={styles.Inputs}>
                     <div className={styles.Input}>
                         <p><FontAwesomeIcon icon={faPerson} /> Insira a altura em centímetros</p>

@@ -10,19 +10,18 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Head>
-        <title>Calcule o IMC e o peso ideal - Calcule pra mim!</title>
+        <title>Calcule o índice de massa corporal e encontre o seu peso ideal - Calcule pra mim!</title>
 
-        <meta name="description" content="Calcule o IMC, Índice de Massa Corporal, e descubra o Peso Ideal." />
-        <meta name="keywords" content="calcule, calculadora, calculadoras, imc, peso, ideal, massa, corporal, índice, lusrodri, ajudar, ajudarem, altura, kg, saúde, pra, mim, ajudam" />
+        <meta name="description" content="Entre com o seu peso e altura, calcule o índice de massa corporal e encontre o seu peso ideal." />
 
-        <meta property="og:title" content="Calcule o IMC e o peso ideal - Calcule pra mim!" />
+        <meta property="og:title" content="Calcule o índice de massa corporal e encontre o seu peso ideal - Calcule pra mim!" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Calcule o IMC, Índice de Massa Corporal, e descubra o Peso Ideal." />
+        <meta property="og:description" content="Entre com o seu peso e altura, calcule o índice de massa corporal e encontre o seu peso ideal." />
         <meta property="og:url" content="https://calculepramim.com/imc" />
         <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
-        <meta name="twitter:title" content="Calcule o IMC e o peso ideal - Calcule pra mim!" />
-        <meta name="twitter:description" content="Calcule o IMC, Índice de Massa Corporal, e descubra o Peso Ideal." />
+        <meta name="twitter:title" content="Calcule o índice de massa corporal e encontre o seu peso ideal - Calcule pra mim!" />
+        <meta name="twitter:description" content="Entre com o seu peso e altura, calcule o índice de massa corporal e encontre o seu peso ideal." />
         <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 

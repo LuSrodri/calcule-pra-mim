@@ -10,19 +10,18 @@ export default function DiferencaDatas() {
   return (
     <div className={styles.main}>
       <Head>
-        <title>Diferença entre datas - Calcule pra mim!</title>
+        <title>Calcule a diferença entre duas datas - Calcule pra mim!</title>
 
-        <meta name="description" content="Calcule a diferença de tempo entre duas datas." />
-        <meta name="keywords" content="calcule, calculadora, calculadoras, data, datas, duas, diferenca, diferenças, lusrodri, tempo, ajudar, pra, mim, ajudam" />
+        <meta name="description" content="Entre com a data inicial e a data final e encontre a distância entre os dois tempos em dias, meses e anos." />
 
-        <meta property="og:title" content="Diferença entre datas - Calcule pra mim!" />
+        <meta property="og:title" content="Calcule a diferença entre duas datas - Calcule pra mim!" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Calcule a diferença de tempo entre duas datas." />
+        <meta property="og:description" content="Entre com a data inicial e a data final e encontre a distância entre os dois tempos em dias, meses e anos." />
         <meta property="og:url" content="https://calculepramim.com/diferencadatas" />
         <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
-        <meta name="twitter:title" content="Calcule investimentos em juros compostos - Calcule pra mim!" />
-        <meta name="twitter:description" content="Calcule a diferença de tempo entre duas datas." />
+        <meta name="twitter:title" content="Calcule a diferença entre duas datas - Calcule pra mim!" />
+        <meta name="twitter:description" content="Entre com a data inicial e a data final e encontre a distância entre os dois tempos em dias, meses e anos." />
         <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 

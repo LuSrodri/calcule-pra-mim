@@ -10,19 +10,18 @@ export default function JurosCompostos() {
   return (
     <div className={styles.main}>
       <Head>
-        <title>Calcule investimentos em juros compostos - Calcule pra mim!</title>
+        <title>Calcule os juros compostos e descobra o quanto você pode ganhar ou perder com os juros sobre juros - Calcule pra mim!</title>
 
-        <meta name="description" content="Calcule investimentos em juros compostos e descubra o poder do tempo." />
-        <meta name="keywords" content="calcule, calculadora, calculadoras, juros, compostos, tempo, investimento, poder, lusrodri, ajudar, pra, mim, ajudam" />
+        <meta name="description" content="Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê." />
 
-        <meta property="og:title" content="Calcule investimentos em juros compostos - Calcule pra mim!" />
+        <meta property="og:title" content="Calcule os juros compostos e descobra o quanto você pode ganhar ou perder com os juros sobre juros - Calcule pra mim!" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Calcule investimentos em juros compostos e descubra o poder do tempo." />
+        <meta property="og:description" content="Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê." />
         <meta property="og:url" content="https://calculepramim.com/juroscompostos" />
         <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
-        <meta name="twitter:title" content="Calcule investimentos em juros compostos - Calcule pra mim!" />
-        <meta name="twitter:description" content="Calcule investimentos em juros compostos e descubra o poder do tempo." />
+        <meta name="twitter:title" content="Calcule os juros compostos e descobra o quanto você pode ganhar ou perder com os juros sobre juros - Calcule pra mim!" />
+        <meta name="twitter:description" content="Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê." />
         <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 

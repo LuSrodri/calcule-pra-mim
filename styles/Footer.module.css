@@ -6,10 +6,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 770px) {
-  .Footer a {
-    font-size: 0.75rem;
-  }
+  text-align: center;
 }

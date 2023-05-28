@@ -74,6 +74,7 @@ export default function JurosCompostosCalculator() {
         <div className={styles.JurosCompostosCalculator}>
             <div className={styles.Calculator}>
                 <h2><FontAwesomeIcon icon={faPercent} /> Calculadora</h2>
+                <p>Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê.</p>
                 <div className={styles.Inputs}>
                     <div className={styles.Input}>
                         <p><FontAwesomeIcon icon={faDollarSign} /> Insira o montante inicial em reais</p>

@@ -52,6 +52,7 @@ export default function DatasCalculator() {
         <div className={styles.JurosCompostosCalculator}>
             <div className={styles.Calculator}>
                 <h2><FontAwesomeIcon icon={faCalendar} /> Calculadora</h2>
+                <p>Entre com a data inicial e a data final e encontre a distância entre os dois tempos em dias, meses e anos.</p>
                 <div className={styles.Inputs}>
                     <div className={styles.Input}>
                         <p><FontAwesomeIcon icon={faCalendar} /> Insira a data inicial</p>
@@ -66,7 +67,7 @@ export default function DatasCalculator() {
                 </div>
                 {diffData > 0 &&
                     <p>
-                        A diferença entre as duas datas é de aproximadamente <strong>{ano} anos</strong>, <strong>{mes} meses</strong> e <strong>{dia} dias</strong>.
+                        A diferença entre as duas datas é de aproximadamente <strong>{ano} ano&#40;s&#41;</strong>, <strong>{mes} mes&#40;es&#41;</strong> e <strong>{dia} dia&#40;s&#41;</strong>.
                     </p>
                 }
                 {diffData <= 0 &&
