@@ -41,6 +41,8 @@ export default function JurosCompostosCalculator() {
                 document.getElementById("adicaoPeriodica").focus();
             }
             if (e.target.id === "adicaoPeriodica") {
+                if (!document.getElementById("resultado"))
+                    return;
                 document.getElementById("resultado").scrollIntoView({ behavior: 'smooth' });
             }
         }

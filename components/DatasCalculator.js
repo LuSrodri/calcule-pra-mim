@@ -50,19 +50,19 @@ export default function DatasCalculator() {
 
     return (
         <div className={styles.JurosCompostosCalculator}>
-            <div className={styles.Calculator}>
+            <div className={styles.Calculator} style={{alignItems: "center"}}>
                 <h2><FontAwesomeIcon icon={faCalendar} /> Calculadora</h2>
                 <p>Entre com a data inicial e a data final e encontre a distância entre os dois tempos em dias, meses e anos.</p>
                 <div className={styles.Inputs}>
                     <div className={styles.Input}>
                         <p><FontAwesomeIcon icon={faCalendar} /> Insira a data inicial</p>
-                        <input onInput={onInputDataInicial} id={"dataInicial"} type={'date'}></input>
+                        <input style={{width: "unset", marginLeft: "20px"}} onInput={onInputDataInicial} id={"dataInicial"} type={'date'}></input>
                     </div>
                 </div>
                 <div className={styles.Inputs}>
                     <div className={styles.Input}>
                         <p><FontAwesomeIcon icon={faCalendar} /> Insira a data final</p>
-                        <input onInput={onInputDataFinal} id={"dataFinal"} type={'date'}></input>
+                        <input style={{width: "unset", marginLeft: "20px"}} onInput={onInputDataFinal} id={"dataFinal"} type={'date'}></input>
                     </div>
                 </div>
                 {diffData > 0 &&
