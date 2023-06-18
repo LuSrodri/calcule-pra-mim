@@ -10,6 +10,11 @@ export default function JurosCompostosCalculator() {
     const [taxa, setTaxa] = useState(0);
     const [tempo, setTempo] = useState(0);
     const [montanteFinal, setMontanteFinal] = useState(0);
+    const [adicaoPeriodica, setAdicaoPeriodica] = useState(0);
+
+    const [taxaIntervalo, setTaxaIntervalo] = useState("ao ano");
+    const [tempoIntervalo, setTempoIntervalo] = useState("anos");
+    const [adicaoIntervalo, setAdicaoIntervalo] = useState("por ano");
 
     useEffect(() => {
         if (firstRender) {
@@ -17,7 +22,7 @@ export default function JurosCompostosCalculator() {
             firstRender = false;
         }
 
-        if (montante !== 0 && !isNaN(montante) && taxa !== 0 && !isNaN(taxa) && tempo !== 0 && !isNaN(tempo)) {
+        if (montante !== 0 && !isNaN(montante) && taxa !== 0 && !isNaN(taxa) && tempo !== 0 && !isNaN(tempo) && adicaoPeriodica !== 0 && !isNaN(adicaoPeriodica)) {
             calculateJurosCompostos();
             return;
         }
@@ -33,6 +38,9 @@ export default function JurosCompostosCalculator() {
                 document.getElementById("tempo").focus();
             }
             if (e.target.id === "tempo") {
+                document.getElementById("adicaoPeriodica").focus();
+            }
+            if (e.target.id === "adicaoPeriodica") {
                 document.getElementById("resultado").scrollIntoView({ behavior: 'smooth' });
             }
         }
@@ -62,12 +70,48 @@ export default function JurosCompostosCalculator() {
         setTempo(0);
     }
 
+    function onInputAdicaoPeriodica(e) {
+        if (!isNaN(e.target.value) && e.target.value !== "") {
+            setAdicaoPeriodica(e.target.value);
+            return;
+        }
+        setAdicaoPeriodica(0);
+    }
+
     function calculateJurosCompostos() {
         if (Number(taxa) === 0 || Number(tempo) === 0) {
             setMontanteFinal(Number(montante).toFixed(2));
             return;
         }
-        setMontanteFinal(Number((montante * ((1 + (taxa / 100))) * tempo)).toFixed(2));
+
+        let taxaPeriodo = taxa;
+        let tempoPeriodo = tempo;
+        let adicaoPeriodicaPeriodo = adicaoPeriodica;
+
+        if (taxaIntervalo === "ao mês") {
+            taxaPeriodo /= 100; // Convertendo para decimal
+        } else {
+            taxaPeriodo = Math.pow(1 + taxaPeriodo / 100, 1 / 12) - 1; // Convertendo taxa anual para taxa mensal
+        }
+
+        if (tempoIntervalo === "meses") {
+            // Não é necessário fazer nenhuma conversão
+        } else {
+            tempoPeriodo *= 12; // Convertendo anos para meses
+        }
+
+        if (adicaoIntervalo === "por mês") {
+            // Não é necessário fazer nenhuma conversão
+        } else {
+            adicaoPeriodicaPeriodo /= 12; // Convertendo valor anual para valor mensal
+        }
+
+        const montanteFinalCalculado =
+            montante * Math.pow(1 + taxaPeriodo, tempoPeriodo) +
+            adicaoPeriodicaPeriodo *
+            ((Math.pow(1 + taxaPeriodo, tempoPeriodo) - 1) / taxaPeriodo);
+
+        setMontanteFinal(Number(montanteFinalCalculado).toFixed(2));
     }
 
     return (
@@ -76,26 +120,53 @@ export default function JurosCompostosCalculator() {
                 <h2><FontAwesomeIcon icon={faPercent} /> Calculadora</h2>
                 <p>Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê.</p>
                 <div className={styles.Inputs}>
+                    <p><FontAwesomeIcon icon={faDollarSign} /> Montante inicial em reais</p>
                     <div className={styles.Input}>
-                        <p><FontAwesomeIcon icon={faDollarSign} /> Insira o montante inicial em reais</p>
                         <input onInput={onInputMontante} onKeyUp={onEnter} id={"montante"} type={'number'}></input>
                     </div>
                 </div>
                 <div className={styles.Inputs}>
+                    <p><FontAwesomeIcon icon={faPercent} />  Taxa de juros em porcentagem</p>
                     <div className={styles.Input}>
-                        <p><FontAwesomeIcon icon={faPercent} />  Insira a taxa de juros em porcentagem</p>
                         <input onInput={onInputTaxa} onKeyUp={onEnter} id={"taxa"} type={'number'}></input>
+                        <select
+                            defaultValue={taxaIntervalo}
+                            onChange={(e) => setTaxaIntervalo(e.target.value)}
+                        >
+                            <option value="ao ano">ao ano</option>
+                            <option value="ao mês">ao mês</option>
+                        </select>
                     </div>
                 </div>
                 <div className={styles.Inputs}>
+                    <p><FontAwesomeIcon icon={faCalendar} /> Período de tempo</p>
                     <div className={styles.Input}>
-                        <p><FontAwesomeIcon icon={faCalendar} /> Insira o período de tempo em meses ou anos</p>
                         <input onInput={onInputTempo} onKeyUp={onEnter} id={"tempo"} type={'number'}></input>
+                        <select
+                            defaultValue={tempoIntervalo}
+                            onChange={(e) => setTempoIntervalo(e.target.value)}
+                        >
+                            <option value="anos">anos</option>
+                            <option value="meses">meses</option>
+                        </select>
+                    </div>
+                </div>
+                <div className={styles.Inputs}>
+                    <p><FontAwesomeIcon icon={faDollarSign} /> Valor que será adicionado periodicamente</p>
+                    <div className={styles.Input}>
+                        <input onInput={onInputAdicaoPeriodica} onKeyUp={onEnter} id={"adicaoPeriodica"} type={'number'}></input>
+                        <select
+                            defaultValue={adicaoIntervalo}
+                            onChange={(e) => setAdicaoIntervalo(e.target.value)}
+                        >
+                            <option value="por ano">por ano</option>
+                            <option value="por mês">por mês</option>
+                        </select>
                     </div>
                 </div>
                 {(montanteFinal !== 0 && !isNaN(montanteFinal)) &&
                     <p id={"resultado"}>
-                        O montante final depois do período de tempo de <strong>{tempo} U.T.</strong> a uma taxa de juros de <strong>{Number(taxa).toLocaleString('pt-BR')}%</strong> é de <strong>{Number(montanteFinal).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.</strong>
+                        O montante final depois do período de tempo de <strong>{tempo} {tempoIntervalo}</strong> a uma taxa de juros de <strong>{Number(taxa).toLocaleString('pt-BR')}% {taxaIntervalo}</strong> e com adição de <strong>{Number(adicaoPeriodica).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} {adicaoIntervalo}</strong> é de <strong>{Number(montanteFinal).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</strong>.
                     </p>
                 }
             </div>

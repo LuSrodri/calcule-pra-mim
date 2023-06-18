@@ -12,16 +12,16 @@ export default function JurosCompostos() {
       <Head>
         <title>Calcule os juros compostos e descobra o quanto você pode ganhar ou perder com os juros sobre juros - Calcule pra mim!</title>
 
-        <meta name="description" content="Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê." />
+        <meta name="description" content="Entre com o montante inicial, a taxa de juros, o período de tempo e com o valor que será adicionado periodicamente e veja o montante final que o juros no tempo provê." />
 
         <meta property="og:title" content="Calcule os juros compostos e descobra o quanto você pode ganhar ou perder com os juros sobre juros - Calcule pra mim!" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê." />
+        <meta property="og:description" content="Entre com o montante inicial, a taxa de juros, o período de tempo e com o valor que será adicionado periodicamente e veja o montante final que o juros no tempo provê." />
         <meta property="og:url" content="https://calculepramim.com/juroscompostos" />
         <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
         <meta name="twitter:title" content="Calcule os juros compostos e descobra o quanto você pode ganhar ou perder com os juros sobre juros - Calcule pra mim!" />
-        <meta name="twitter:description" content="Entre com o montante inicial, a taxa de juros e com o período de tempo e veja o montante final que o juros no tempo provê." />
+        <meta name="twitter:description" content="Entre com o montante inicial, a taxa de juros, o período de tempo e com o valor que será adicionado periodicamente e veja o montante final que o juros no tempo provê." />
         <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
 

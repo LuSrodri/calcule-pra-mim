@@ -21,16 +21,25 @@
     margin: 30px;
 }
 
+.Calculator {
+    align-items: flex-start;
+}
+
+.Calculator h2 {
+    align-self: center;
+}
+
 .Inputs {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .Input {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 15px;
@@ -46,14 +55,29 @@
     font-weight: 700;
 }
 
-.Input input {
-    width: 150px;
+.Input input,
+.Input select {
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+    width: 100px;
+    height: 30px;
     padding: 10px;
     font-weight: 700;
     border: none;
     border-radius: 15px;
+    margin: 2px;
+
+    box-shadow: 0px 2px 5px #00000040;
 }
 
-.Infos p, .Infos h2 {
+.Input select {
+    width: 75px;
+}
+
+.Infos p,
+.Infos h2 {
     text-align: justify;
 }
