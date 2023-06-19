@@ -81,3 +81,8 @@
 .Infos h2 {
     text-align: justify;
 }
+
+.table,
+.table * {
+    user-select: text;
+}
