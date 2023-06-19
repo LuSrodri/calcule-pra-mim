@@ -2,6 +2,7 @@ import styles from '@/styles/JurosCompostosCalculator.module.css';
 import { faCalculator } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
+import { evaluate } from 'mathjs';
 
 export default function JurosCompostosCalculator() {
     const [mathExp, setMathExp] = useState("");
@@ -22,7 +23,8 @@ export default function JurosCompostosCalculator() {
     function calculate() {
         try {
             const translatedExp = translateMathExp(mathExp);
-            const result = eval(translatedExp);
+            const result = evaluate(translatedExp).toString();
+            if (result.includes("function")) throw new Error();
             setMathExpResult(result);
         } catch (error) {
             setMathExpResult("Erro na expressão matemática");
@@ -32,25 +34,10 @@ export default function JurosCompostosCalculator() {
     function translateMathExp(exp) {
         let translatedExp = exp;
 
-        translatedExp = translatedExp.replace(/π/g, eval(Math.PI));
-        translatedExp = translatedExp.replace(/pi/g, eval(Math.PI));
-        translatedExp = translatedExp.replace(/e/g, eval(Math.E));
-
-        translatedExp = translatedExp.replace(/sqrt\(([^)]+)\)/g, "Math.sqrt($1)");
-        translatedExp = translatedExp.replace(/sin-1\(([^)]+)\)/g, "Math.asin($1)");
-        translatedExp = translatedExp.replace(/cos-1\(([^)]+)\)/g, "Math.acos($1)");
-        translatedExp = translatedExp.replace(/tan-1\(([^)]+)\)/g, "Math.atan($1)");
-        translatedExp = translatedExp.replace(/ln\(([^)]+)\)/g, "Math.log($1)");
-        translatedExp = translatedExp.replace(/log\(([^)]+)\)/g, "Math.log10($1)");
-
+        translatedExp = translatedExp.replace(/pi/g, eval("Math.PI"));
+        translatedExp = translatedExp.replace(/π/g, eval("Math.PI"));
+        translatedExp = translatedExp.replace(/e/g, eval("Math.E"));
         translatedExp = translatedExp.replace(/x/g, "*");
-        translatedExp = translatedExp.replace(/÷/g, "/");
-
-        translatedExp = translatedExp.replace(/(\d+(?:\.\d+)?)\^(\d+(?:\.\d+)?)/g, "Math.pow($1, $2)");
-
-        translatedExp = translatedExp.replace(/sin\(([^)]+)\)/g, "Math.sin($1)");
-        translatedExp = translatedExp.replace(/cos\(([^)]+)\)/g, "Math.cos($1)");
-        translatedExp = translatedExp.replace(/tan\(([^)]+)\)/g, "Math.tan($1)");
 
         return translatedExp;
     }
@@ -85,12 +72,12 @@ export default function JurosCompostosCalculator() {
                             <td>+</td>
                         </tr>
                         <tr>
-                            <td>Subtração (somente valores positivos)</td>
+                            <td>Subtração</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Multiplicação (muitas calculadoras também incluem a tecla x para variáveis)</td>
-                            <td>*</td>
+                            <td>Multiplicação</td>
+                            <td>*, x</td>
                         </tr>
                         <tr>
                             <td>Divisão</td>
@@ -114,7 +101,7 @@ export default function JurosCompostosCalculator() {
                         </tr>
                         <tr>
                             <td>Função seno inversa</td>
-                            <td>sin-1(x)</td>
+                            <td>asin(x)</td>
                         </tr>
                         <tr>
                             <td>Função cosseno</td>
@@ -122,7 +109,7 @@ export default function JurosCompostosCalculator() {
                         </tr>
                         <tr>
                             <td>Função cosseno inversa</td>
-                            <td>cos-1(x)</td>
+                            <td>acos(x)</td>
                         </tr>
                         <tr>
                             <td>Função tangente</td>
@@ -130,15 +117,15 @@ export default function JurosCompostosCalculator() {
                         </tr>
                         <tr>
                             <td>Função tangente inversa</td>
-                            <td>tan-1(x)</td>
+                            <td>atan(x)</td>
                         </tr>
                         <tr>
                             <td>Logaritmo de base e</td>
-                            <td>ln(x)</td>
+                            <td>log(x)</td>
                         </tr>
                         <tr>
                             <td>Logaritmo de base 10</td>
-                            <td>log(x)</td>
+                            <td>log10(x)</td>
                         </tr>
                         <tr>
                             <td>Parênteses que indicam a ordem das operações</td>
