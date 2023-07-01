@@ -86,3 +86,19 @@
 .table * {
     user-select: text;
 }
+
+.examples strong{
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.25rem;
+    color: gray;
+    text-decoration: underline;
+}
+
+.examples {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

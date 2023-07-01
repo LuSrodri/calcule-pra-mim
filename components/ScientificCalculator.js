@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import { evaluate } from 'mathjs';
 
-export default function JurosCompostosCalculator() {
+export default function ScientificCalculator() {
     const [mathExp, setMathExp] = useState("");
     const [mathExpResult, setMathExpResult] = useState("");
 
@@ -54,10 +54,22 @@ export default function JurosCompostosCalculator() {
                 </div>
 
                 {mathExpResult !== "" && (
-                    <p id="resultado">
+                    <p id="resultado" style={{fontSize: "1.25rem"}}>
                         <strong>Resultado:</strong> {mathExpResult}
                     </p>
                 )}
+
+                <p className={styles.examples}>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>2^3</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>log(100)</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>sin(45)</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>sqrt(25)</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>5!</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>abs(-7)</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>round(3.14)</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>random()</strong>
+                    <strong onClick={(e) => setMathExp(e.target.innerHTML)}>atan2(1,2)</strong>
+                </p>
 
                 <table className={styles.table} style={{ margin: "20px auto" }}>
                     <thead>
@@ -84,6 +96,10 @@ export default function JurosCompostosCalculator() {
                             <td>/</td>
                         </tr>
                         <tr>
+                            <td>Módulo</td>
+                            <td>x%y</td>
+                        </tr>
+                        <tr>
                             <td>Elevar à potência</td>
                             <td>^</td>
                         </tr>
@@ -94,6 +110,14 @@ export default function JurosCompostosCalculator() {
                         <tr>
                             <td>Raiz quadrada</td>
                             <td>sqrt(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Raiz cúbica</td>
+                            <td>cbrt(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Raiz n-ésima</td>
+                            <td>nthRoot(x, n)</td>
                         </tr>
                         <tr>
                             <td>Função seno</td>
@@ -128,6 +152,10 @@ export default function JurosCompostosCalculator() {
                             <td>log10(x)</td>
                         </tr>
                         <tr>
+                            <td>Logaritmo de base qualquer</td>
+                            <td>log(x, base)</td>
+                        </tr>
+                        <tr>
                             <td>Parênteses que indicam a ordem das operações</td>
                             <td>()</td>
                         </tr>
@@ -138,6 +166,54 @@ export default function JurosCompostosCalculator() {
                         <tr>
                             <td>Número de Euler</td>
                             <td>e</td>
+                        </tr>
+                        <tr>
+                            <td>n Fatorial</td>
+                            <td>n!</td>
+                        </tr>
+                        <tr>
+                            <td>Valor absoluto</td>
+                            <td>abs(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Valor arrendondado</td>
+                            <td>round(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Seno hiperbólico</td>
+                            <td>sinh(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Cosseno hiperbólico</td>
+                            <td>cosh(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Tangente hiperbólica</td>
+                            <td>tanh(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Arco seno hiperbólico</td>
+                            <td>asinh(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Arco cosseno hiperbólico</td>
+                            <td>acosh(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Arco tangente hiperbólica</td>
+                            <td>atanh(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Retornar o sinal do número</td>
+                            <td>sign(x)</td>
+                        </tr>
+                        <tr>
+                            <td>Número aleatório entre 0 e 1</td>
+                            <td>random()</td>
+                        </tr>
+                        <tr>
+                            <td>Arco tangente de dois argumentos</td>
+                            <td>atan2(y, x)</td>
                         </tr>
                     </tbody>
                 </table>
