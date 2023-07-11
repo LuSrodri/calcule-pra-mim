@@ -10,17 +10,17 @@ export default function Cientifica() {
   return (
     <div className={styles.main}>
       <Head>
-        <title>Use a calculadora científica e encontre resultados para expressões matemáticas - Calcule pra mim!</title>
+        <title>Use a calculadora científica e encontre resultados para expressões matemáticas - Calculadora Científica</title>
 
         <meta name="description" content="Insira uma expressão matemática e descubra o resultado." />
 
-        <meta property="og:title" content="Use a calculadora científica e encontre resultados para expressões matemáticas - Calcule pra mim!" />
+        <meta property="og:title" content="Use a calculadora científica e encontre resultados para expressões matemáticas - Calculadora Científica" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Insira uma expressão matemática e descubra o resultado." />
         <meta property="og:url" content="https://calculepramim.com/cientifica" />
         <meta property="og:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
 
-        <meta name="twitter:title" content="Use a calculadora científica e encontre resultados para expressões matemáticas - Calcule pra mim!" />
+        <meta name="twitter:title" content="Use a calculadora científica e encontre resultados para expressões matemáticas - Calculadora Científica" />
         <meta name="twitter:description" content="Insira uma expressão matemática e descubra o resultado." />
         <meta name="twitter:image" content="https://calculepramim.com/calcule-pra-mim-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
