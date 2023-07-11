@@ -20,6 +20,12 @@ export default function ScientificCalculator() {
         setMathExp(e.target.value);
     }
 
+    function onEnter(e) {
+        if (e.key === "Enter") {
+            calculate();
+        }
+    }
+
     function calculate() {
         try {
             const translatedExp = translateMathExp(mathExp);
@@ -49,7 +55,7 @@ export default function ScientificCalculator() {
                 <p>Insira uma expressão matemática e encontre o resultado. Valores decimais são separados por ponto (.). Funções trigonométricas recebem valores em radianos.</p>
                 <div className={styles.Inputs} style={{ width: "100%", alignItems: "center", justifyContent: "center" }}>
                     <div className={styles.Input} style={{ width: "100%" }}>
-                        <input style={{ width: "100%" }} value={mathExp} onInput={onInputMathExp} type="text" />
+                        <input onKeyDown={onEnter} style={{ width: "100%" }} value={mathExp} onInput={onInputMathExp} type="text" />
                     </div>
                 </div>
 

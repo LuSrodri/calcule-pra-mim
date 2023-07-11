@@ -20,6 +20,12 @@ export default function AlgebraCalculator() {
         setMathExp(e.target.value);
     }
 
+    function onEnter(e) {
+        if (e.key === "Enter") {
+            calculate();
+        }
+    }
+
     function calculate() {
         try {
             const equation = algebra.parse(translateMathExp(mathExp));
@@ -60,11 +66,13 @@ export default function AlgebraCalculator() {
                 <p>Insira uma expressão algébrica e encontre os resultados de <strong>x, y e z</strong> (se tiver). Valores decimais são separados por ponto (.).</p>
                 <div className={styles.Inputs} style={{ width: "100%", alignItems: "center", justifyContent: "center" }}>
                     <div className={styles.Input} style={{ width: "100%" }}>
-                        <input style={{ width: "100%" }} value={mathExp} onInput={onInputMathExp} type="text" />
+                        <input onKeyDown={onEnter} style={{ width: "100%" }} value={mathExp} onInput={onInputMathExp} type="text" />
                     </div>
                 </div>
 
-                <p id="resultado" style={{ fontSize: "1.25rem" }} dangerouslySetInnerHTML={{ __html: mathExpResult }}></p>
+                {mathExpResult !== "" && (
+                    <p id="resultado" style={{ fontSize: "1.25rem" }} dangerouslySetInnerHTML={{ __html: mathExpResult }}></p>
+                )}
 
                 <p className={styles.examples}>
                     <strong onClick={(e) => setMathExp(e.target.innerHTML)}>2x - 3 = 4</strong>
