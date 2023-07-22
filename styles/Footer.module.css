@@ -10,6 +10,14 @@
   flex-direction: column;
 }
 
+.Footer .plink {
+  margin-bottom: 0;
+}
+
 .Footer .plink:empty {
   margin: 0;
+}
+
+.Footer .plink a {
+  display: block;
 }
