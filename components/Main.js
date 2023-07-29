@@ -1,5 +1,5 @@
 import styles from '@/styles/Main.module.css';
-import { faAppleWhole, faCalculator, faCalendar, faExclamationCircle, faPercent, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
+import { faAppleWhole, faCalculator, faCalendar, faEllipsisVertical, faPercent, faStar, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from './Card';
 import Link from 'next/link';
@@ -7,6 +7,8 @@ import Link from 'next/link';
 export default function Main() {
     return (
         <main className={styles.Main}>
+            <h1>Calculadoras</h1>
+
             <div className={styles.menu}>
                 <Card icon={<FontAwesomeIcon icon={faCalculator} />} title={"Calculadora Científica"} path={"/cientifica"}></Card>
                 <Card icon={<FontAwesomeIcon icon={faX} />} title={"Calculadora Algébrica"} path={"/algebrica"}></Card>
@@ -16,6 +18,8 @@ export default function Main() {
             </div>
 
             <hr></hr>
+
+            <h1>Documentação</h1>
 
             <h2>Use a calculadora científica e encontre resultados para expressões matemáticas</h2>
             <p>
@@ -32,7 +36,7 @@ export default function Main() {
                 Com funcionalidades avançadas, essas calculadoras são capazes de realizar cálculos complexos, converter unidades, armazenar valores frequentemente utilizados e até mesmo representar graficamente dados numéricos.
                 Portanto, são ferramentas indispensáveis para aqueles que lidam com cálculos e análises quantitativas.
             </p>
-            <Link href="cientifica">Ver mais <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="cientifica">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
@@ -50,7 +54,7 @@ export default function Main() {
                 Com a calculadora algébrica, basta inserir a expressão desejada e apertar o botão de calcular para obter o resultado.
                 Ela é capaz de realizar múltiplas operações de forma simultânea, respeitando as regras da matemática.
             </p>
-            <Link href="algebrica">Ver mais <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="algebrica">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
@@ -79,7 +83,7 @@ export default function Main() {
                 Em resumo, calcular o índice de massa corporal é uma maneira simples e eficaz de avaliar o estado de saúde e o peso ideal de uma pessoa.
                 Porém, é importante lembrar que o IMC é apenas um indicador geral e não substitui a orientação e o acompanhamento de profissionais de saúde.
             </p>
-            <Link href="imc">Ver mais <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="imc">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
@@ -103,7 +107,7 @@ export default function Main() {
                 Com esse conhecimento, é possível tomar melhores decisões financeiras e aproveitar ao máximo o potencial do crescimento dos investimentos.
                 Ter uma estratégia sólida e realizar cálculos precisos são passos fundamentais para uma trajetória de sucesso no mundo dos negócios e das finanças.
             </p>
-            <Link href="juroscompostos">Ver mais <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="juroscompostos">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
@@ -119,11 +123,13 @@ export default function Main() {
                 Em resumo, calcular a diferença de tempo entre duas datas pode ser feito de diversas maneiras, desde cálculos manuais até o uso de ferramentas tecnológicas.
                 Independentemente do método escolhido, essa habilidade é útil para diversas situações e pode fornecer informações precisas e relevantes.
             </p>
-            <Link href="diferencadatas">Ver mais <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="diferencadatas">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
-            <h2><FontAwesomeIcon icon={faExclamationCircle} /> Sempre acompanhe as novidades <FontAwesomeIcon icon={faExclamationCircle} /></h2>
+            <h2><FontAwesomeIcon icon={faEllipsisVertical} /></h2>
+
+            <h2><FontAwesomeIcon icon={faStar} /> Acompanhe as novidades <FontAwesomeIcon icon={faStar} /></h2>
         </main>
     );
 }
