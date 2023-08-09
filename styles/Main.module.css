@@ -12,6 +12,10 @@
   margin: 25px 0;
 }
 
+.Main * {
+  user-select: text !important;
+}
+
 .Main .menu {
   display: flex;
   flex-direction: row;
@@ -30,11 +34,14 @@
 }
 
 .Main p {
-  width: 80%;
+  width: 95%;
   max-width: 800px;
   text-align: justify;
 }
 
-.Main h2 {
+.Main h2,
+.Main h1 {
   text-align: center;
+  width: 95%;
+  max-width: 800px;
 }

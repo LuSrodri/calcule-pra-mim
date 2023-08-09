@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Main() {
     return (
         <main className={styles.Main}>
-            <h1>Calculadoras</h1>
+            <h1>Acesso rápido</h1>
 
             <div className={styles.menu}>
                 <Card icon={<FontAwesomeIcon icon={faCalculator} />} title={"Calculadora Científica"} path={"/cientifica"}></Card>
@@ -19,71 +19,29 @@ export default function Main() {
 
             <hr></hr>
 
-            <h1>Documentação</h1>
+            <h1>Principais artigos</h1>
 
-            <h2>Use a calculadora científica e encontre resultados para expressões matemáticas</h2>
+            <h2>A Calculadora Científica: Uma Indispensável Ferramenta Matemática.</h2>
             <p>
-                As calculadoras científicas são ferramentas essenciais para estudantes e profissionais das áreas da ciência, matemática e engenharia.
-                Com funções complexas e avançadas, esses dispositivos são capazes de realizar cálculos que vão além das capacidades das calculadoras básicas.
-                Você pode calcular expressões matemáticas como: 2^3, log(100), sin(45), sqrt(25), 5!, abs(-7), round(3.14), random() e atan2(1,2).
+                O avanço do conhecimento humano muitas vezes nos apresenta cálculos matemáticos que vão além da simples adição ou subtração. Da ciência à engenharia, referência em cálculos complexos e árduos é a calculadora científica. Considerada uma ferramenta indispensável, seu uso não se restringe apenas ao ambiente acadêmico, mas também em vários campos profissionais...
             </p>
-            <p>
-                Uma das principais funcionalidades das calculadoras científicas é a capacidade de executar operações matemáticas complexas, como cálculos trigonométricos (seno, cosseno, tangente), exponenciais, logarítmicas e raízes quadradas.
-                Essas funções são especialmente úteis para resolver equações e realizar análises numéricas em áreas como cálculo, física e estatística.
-            </p>
-            <p>
-                Em resumo, as calculadoras científicas são instrumentos poderosos que auxiliam estudantes e profissionais em suas atividades acadêmicas e profissionais.
-                Com funcionalidades avançadas, essas calculadoras são capazes de realizar cálculos complexos, converter unidades, armazenar valores frequentemente utilizados e até mesmo representar graficamente dados numéricos.
-                Portanto, são ferramentas indispensáveis para aqueles que lidam com cálculos e análises quantitativas.
-            </p>
-            <Link href="cientifica">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="artigos/cientifica">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
-            <h2>Use a calculadora algébrica e encontre resultados para expressões algébricas</h2>
+            <h2>Descobrindo a Calculadora Algébrica e o Cálculo Algébrico.</h2>
             <p>
-                A calculadora algébrica é uma poderosa ferramenta para resolver expressões matemáticas de forma rápida e precisa.
-                Com ela, é possível simplificar e encontrar resultados para equações e expressões algébricas complexas.
-                Você pode resolver expressões algébricas como: 2x - 3 = 4, (7/2)z = 1/4, y = (1/12)x + 73/60, x^2 + (17/4)x - 15/4 = 0 e 2x^2 + 5xy - 3y^2 = 0.
+                Ao nos aventuramos no âmbito da matemática, descobrimos que seu campo de estudo amplia-se com o aumento do nível de complexidade. Um desses domínios é a álgebra, a qual fez surgir ferramentas especializadas como a calculadora algébrica...
             </p>
-            <p>
-                Uma expressão algébrica é uma combinação de números, variáveis e operações matemáticas, como adição, subtração, multiplicação e divisão.
-                Elas podem envolver termos positivos e negativos, assim como potências e raízes.
-            </p>
-            <p>
-                Com a calculadora algébrica, basta inserir a expressão desejada e apertar o botão de calcular para obter o resultado.
-                Ela é capaz de realizar múltiplas operações de forma simultânea, respeitando as regras da matemática.
-            </p>
-            <Link href="algebrica">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="artigos/algebrica">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
-            <h2>Calcule o índice de massa corporal e descubra o peso ideal</h2>
+            <h2>Compreendendo o Índice de Massa Corporal e a Busca pelo Peso Ideal.</h2>
             <p>
-                O índice de massa corporal (IMC) é uma medida que relaciona o peso de uma pessoa com sua altura, fornecendo uma indicação do seu estado de saúde e do peso ideal.
-                Calcular o IMC é uma maneira simples e eficaz de avaliar se uma pessoa está abaixo do peso, com peso normal, sobrepeso ou obesa.
+                Atualmente, a saúde e o bem-estar estão em voga, e o conceito de um estilo de vida saudável se tornou mais popular e essencial do que nunca. Dietas saudáveis, exercícios regulares, hidratação adequada e sono regular são alguns dos aspectos dessa equação complexa. No centro deste debate, ganham destaque os conceitos de Índice de Massa Corporal (IMC) e &quot;peso ideal&quot;...
             </p>
-            <p>
-                Para calcular o IMC, basta utilizar a fórmula: IMC = peso (em quilogramas) dividido pelo quadrado da altura (em metros).
-                Após realizar essa operação, é possível consultar uma tabela de classificação para entender em qual faixa de peso a pessoa se encontra.
-            </p>
-            <p>
-                Uma vez que o IMC tenha sido calculado, é importante interpretar os resultados de forma correta.
-                O IMC varia entre as seguintes categorias: abaixo do peso (IMC menor que 18,5), peso normal (IMC entre 18,5 e 24,9), sobrepeso (IMC entre 25 e 29,9) e obesidade (IMC igual ou superior a 30).
-            </p>
-            <p>
-                É válido ressaltar que o IMC é uma medida geral e não considera outros fatores importantes, como a composição corporal e a distribuição de gordura.
-                Portanto, para uma avaliação mais completa, é recomendado consultar um profissional de saúde, como um médico ou nutricionista.
-            </p>
-            <p>
-                A partir do cálculo do IMC, é possível obter uma ideia aproximada do peso ideal para uma determinada altura.
-                Entretanto, cada pessoa é única e outros fatores individuais devem ser considerados, como a idade, o sexo e a atividade física praticada.
-            </p>
-            <p>
-                Em resumo, calcular o índice de massa corporal é uma maneira simples e eficaz de avaliar o estado de saúde e o peso ideal de uma pessoa.
-                Porém, é importante lembrar que o IMC é apenas um indicador geral e não substitui a orientação e o acompanhamento de profissionais de saúde.
-            </p>
-            <Link href="imc">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="artigos/imc-pesoideal">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
@@ -127,9 +85,8 @@ export default function Main() {
 
             <hr></hr>
 
-            <h2><FontAwesomeIcon icon={faEllipsisVertical} /></h2>
-
-            <h2><FontAwesomeIcon icon={faStar} /> Acompanhe as novidades <FontAwesomeIcon icon={faStar} /></h2>
+            <h1>Outros artigos</h1>
+            <h2>Em breve!</h2>
         </main>
     );
 }
