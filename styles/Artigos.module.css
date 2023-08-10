@@ -1,0 +1,58 @@
+.Main {
+  background-color: #ffffff95;
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+  border-radius: 15px;
+  margin: 25px 0;
+}
+
+.Main .all * {
+  user-select: text !important;
+}
+
+.Main *:not(.all) {
+  max-width: 70vw;
+}
+
+.Main .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Main hr {
+  width: 80%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #000000;
+  border: none;
+  margin: 2rem 0;
+}
+
+.Main .all{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main .all p {
+  width: 95%;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.Main .all h2,
+.Main .all h1 {
+  text-align: center;
+  width: 95%;
+  max-width: 800px;
+}

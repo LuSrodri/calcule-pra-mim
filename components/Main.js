@@ -1,5 +1,5 @@
 import styles from '@/styles/Main.module.css';
-import { faAppleWhole, faCalculator, faCalendar, faEllipsisVertical, faPercent, faStar, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
+import { faAppleWhole, faCalculator, faCalendar, faPercent, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from './Card';
 import Link from 'next/link';
@@ -16,8 +16,6 @@ export default function Main() {
                 <Card icon={<FontAwesomeIcon icon={faPercent} />} title={"Juros compostos"} path={"/juroscompostos"}></Card>
                 <Card icon={<FontAwesomeIcon icon={faCalendar} />} title={"Diferença entre datas"} path={"/diferencadatas"}></Card>
             </div>
-
-            <hr></hr>
 
             <h1>Principais artigos</h1>
 
@@ -45,48 +43,38 @@ export default function Main() {
 
             <hr></hr>
 
-            <h2>Calcule investimentos com base em juros compostos</h2>
+            <h2>A Arte de Ganhar Dinheiro com Juros Compostos.</h2>
             <p>
-                Os juros compostos são uma forma de cálculo de retorno financeiro que leva em consideração não apenas o montante inicial investido, mas também os juros acumulados ao longo do tempo.
-                Basicamente, a ideia é reinvestir os rendimentos obtidos, gerando assim um crescimento exponencial do capital aplicado.
+                Começaremos com uma pergunta simples: O que são juros compostos? Juros Compostos são um método de cálculo do juros que incidem sobre uma quantia de dinheiro, onde o valor do juros é somado ao montante original para calcular os juros do próximo período. Este ciclo continua até o final do período de investimento. A regra é fundamental para o funcionamento de muitos produtos financeiros, incluindo poupanças, créditos e investimentos. Mas como podemos usar isso para ganhar dinheiro?...
             </p>
-            <p>
-                Para calcular investimentos com base em juros compostos, é importante conhecer algumas informações fundamentais, como o montante inicial investido, a taxa de juros e o período de tempo em que o investimento será mantido.
-            </p>
-            <p>
-                A fórmula utilizada para calcular o montante final de um investimento com juros compostos é a seguinte: M = P * (1 + i)^n, onde M é o montante final, P é o montante principal, i é a taxa de juros e n é o número de períodos de tempo.
-            </p>
-            <p>
-                É importante ressaltar que os juros compostos são muito poderosos quando o investimento é feito em longo prazo.
-                Isso ocorre porque a reinvestimento dos rendimentos ajuda a acelerar o crescimento do patrimônio.
-            </p>
-            <p>
-                Por fim, é importante destacar que conhecer e entender o poder dos juros compostos é fundamental para o sucesso de qualquer investidor.
-                Com esse conhecimento, é possível tomar melhores decisões financeiras e aproveitar ao máximo o potencial do crescimento dos investimentos.
-                Ter uma estratégia sólida e realizar cálculos precisos são passos fundamentais para uma trajetória de sucesso no mundo dos negócios e das finanças.
-            </p>
-            <Link href="juroscompostos">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="artigos/juros-compostos">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
-            <h2>Calcule a diferença de tempo entre duas datas</h2>
+            <h2>A Fascinante Evolução dos Calendários, Datas e Cálculos</h2>
             <p>
-                Calcular a diferença de tempo entre duas datas pode ser útil em diversas situações, como planejamento de viagens, determinar a idade de alguém ou acompanhar o tempo decorrido desde um evento específico.
-                Felizmente, existem ferramentas e métodos que facilitam esse cálculo.
+                O calendário é uma das mais antigas ferramentas de cálculo e mensuração de tempo desenvolvidas pela humanidade, evoluindo ao longo dos séculos para adaptar-se as necessidades das sociedades. Mais do que apenas uma lista ordenada de dias, semanas e meses, os calendários são representações refinadas do tempo vivenciado por humanos e possuem um papel primordial em nossas vidas. O entendimento de datas e cálculos, por sua vez, figura uma seção chave desse entendimento e uso efetivo dos calendários...
             </p>
-            <p>
-                Uma forma simples de calcular a diferença entre duas datas é subtrair a data mais antiga da data mais recente. Para isso, é importante ter as datas no formato correto, geralmente no formato dia/mês/ano.
-            </p>
-            <p>
-                Em resumo, calcular a diferença de tempo entre duas datas pode ser feito de diversas maneiras, desde cálculos manuais até o uso de ferramentas tecnológicas.
-                Independentemente do método escolhido, essa habilidade é útil para diversas situações e pode fornecer informações precisas e relevantes.
-            </p>
-            <Link href="diferencadatas">Ver mais e usar <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+            <Link href="artigos/calendarios-datas-calculos">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
             <hr></hr>
 
             <h1>Outros artigos</h1>
-            <h2>Em breve!</h2>
+
+            <h2>Ganhe Dinheiro com Domínios Web: Uma Oportunidade Lucrativa na Era Digital.</h2>
+            <p>
+                Os domínios web tornaram-se uma das muitas maneiras pelas quais as pessoas podem ganhar dinheiro na era digital. Com a proliferação da internet e o crescimento das empresas online, os domínios web transformaram-se em propriedades virtuais muito valorizadas. Este artigo elucidará o conceito de ganhar dinheiro com domínios web e as diversas formas práticas de se fazer isso...
+            </p>
+            <Link href="artigos/dominios-web">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+
+            <hr></hr>
+
+            <h2>Entendimento de Precedências nos Cálculos: Uma Escalada na Resolução de Problemas Matemáticos</h2>
+            <p>
+            A Matemática é uma linguagem precisa e rigorosa que segue uma série de regras estabelecidas para garantir que determinado cálculo ou sequência de operações produza um resultado correto e único. Uma dessas regras primordiais é a precedência de operações, uma norma de execução que estabelece a ordem em que os cálculos devem ser realizados. Entender estas regras é fundamental para a resolução correta de problemas matemáticos e científicos...
+            </p>
+            <Link href="artigos/como-fazer-calculos">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+
         </main>
     );
 }

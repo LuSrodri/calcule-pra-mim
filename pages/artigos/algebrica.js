@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import TopBar from '@/components/TopBar';
-import stylesMain from '@/styles/Main.module.css';
+import stylesMain from '@/styles/Artigos.module.css';
 import Footer from '@/components/Footer';
 import AlgebraCalculator from '@/components/AlgebraCalculator';
 
@@ -29,6 +29,7 @@ export default function Default() {
             </Head>
             <TopBar isHome={false}></TopBar>
             <main className={stylesMain.Main}>
+                <div className={stylesMain.all}>
                 <h1>Descobrindo a Calculadora Algébrica e o Cálculo Algébrico.</h1>
 
                 <p>
@@ -78,6 +79,7 @@ export default function Default() {
                 <hr></hr>
 
                 <h2>Buscando por uma calculadora algébrica? Utilize a nossa!</h2>
+                </div>
                 <AlgebraCalculator></AlgebraCalculator>
             </main>
             <Footer></Footer>
