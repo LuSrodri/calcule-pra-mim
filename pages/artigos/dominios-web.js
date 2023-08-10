@@ -44,7 +44,7 @@ export default function Default() {
                     </p>
 
                     <p>
-                        Compra e Venda de Domínios - Também conhecida como "Domain Flipping", essa estratégia envolve a compra de domínios a um preço baixo e a venda desses mesmos domínios a um preço mais alto. O truque é identificar e comprar domínios que tenham um alto potencial de desejabilidade e, portanto, valor. Nomes curtos, fáceis de lembrar e com palavras-chave relevantes são geralmente os mais procurados.
+                        Compra e Venda de Domínios - Também conhecida como &quot;Domain Flipping&quot;, essa estratégia envolve a compra de domínios a um preço baixo e a venda desses mesmos domínios a um preço mais alto. O truque é identificar e comprar domínios que tenham um alto potencial de desejabilidade e, portanto, valor. Nomes curtos, fáceis de lembrar e com palavras-chave relevantes são geralmente os mais procurados.
                     </p>
 
                     <p>

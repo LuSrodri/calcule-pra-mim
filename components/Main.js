@@ -75,6 +75,8 @@ export default function Main() {
             </p>
             <Link href="artigos/como-fazer-calculos">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
+            <hr></hr>
+
         </main>
     );
 }
