@@ -1,5 +1,5 @@
 import styles from '@/styles/ImcCalculator.module.css';
-import { faAppleWhole, faExclamationCircle, faPerson, faUpRightFromSquare, faWeightScale } from '@fortawesome/free-solid-svg-icons';
+import { faAppleWhole, faExclamationCircle, faPerson, faShare, faUpRightFromSquare, faWeightScale } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -33,7 +33,7 @@ export default function ImcCalculator() {
                 document.getElementById("peso").focus();
             }
             if (e.target.id === "peso") {
-                document.getElementById("resultado").scrollIntoView({behavior: 'smooth'});
+                document.getElementById("resultado").scrollIntoView({ behavior: 'smooth' });
             }
         }
     }
@@ -94,9 +94,12 @@ export default function ImcCalculator() {
                     </div>
                 </div>
                 {(imc !== 0 && !isNaN(imc)) &&
-                    <p id={"resultado"}>
-                        O índice de massa corporal é de <strong>{imc} kg/m²</strong>, considerado <strong>{classificacao}</strong>. O peso ideal deve ser entre <strong>{pesoIdealMin}</strong> e <strong>{pesoIdealMax} kg</strong>.
-                    </p>
+                    <>
+                        <p id={"resultado"}>
+                            O índice de massa corporal é de <strong>{imc} kg/m²</strong>, considerado <strong>{classificacao}</strong>. O peso ideal deve ser entre <strong>{pesoIdealMin}</strong> e <strong>{pesoIdealMax} kg</strong>.
+                        </p>
+                        {(navigator && navigator.share) && <a onClick={() => { navigator.share({ url: window.location.href, title: "Olha qual peso ideal!", text: `O meu peso ideal deve ser entre ${pesoIdealMin} Kg e ${pesoIdealMax}. E estou com ${classificacao}! Faça você também o teste!` }) }}> Compartilhar <FontAwesomeIcon icon={faShare} /></a>}
+                    </>
                 }
             </div>
             <div className={styles.Infos}>
