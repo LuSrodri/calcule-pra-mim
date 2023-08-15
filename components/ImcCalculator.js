@@ -98,7 +98,7 @@ export default function ImcCalculator() {
                         <p id={"resultado"}>
                             O índice de massa corporal é de <strong>{imc} kg/m²</strong>, considerado <strong>{classificacao}</strong>. O peso ideal deve ser entre <strong>{pesoIdealMin}</strong> e <strong>{pesoIdealMax} kg</strong>.
                         </p>
-                        {(navigator && navigator.share) && <a onClick={() => { navigator.share({ url: window.location.href, title: "Olha qual peso ideal!", text: `O meu peso ideal deve ser entre ${pesoIdealMin} Kg e ${pesoIdealMax}. E estou com ${classificacao}! Faça você também o teste!` }) }}> Compartilhar <FontAwesomeIcon icon={faShare} /></a>}
+                        {(navigator && navigator.share) && <a onClick={() => { navigator.share({ url: window.location.href, title: "Olha qual peso ideal!", text: `O meu peso ideal deve ser entre ${pesoIdealMin} Kg e ${pesoIdealMax} Kg. E estou com ${classificacao}! Faça você também o teste!` }) }}> Compartilhar <FontAwesomeIcon icon={faShare} /></a>}
                     </>
                 }
             </div>
