@@ -61,6 +61,14 @@ export default function Main() {
 
             <h1>Outros artigos</h1>
 
+            <h2>Como ganhar dinheiro na internet: Do jeito verdadeiro, confiável e duradouro.</h2>
+            <p>
+            A era digital abriu novas possibilidades de trabalho e renda, possibilitando que milhões de pessoas ao redor do mundo consigam ganhar dinheiro sem sair de casa. Contudo, essa mesma abertura também possibilitou a proliferação de esquemas fraudulentos e práticas desleais. Para os iniciantes no mundo digital, encontrar formas legítimas de ganhar dinheiro pela internet pode ser um desafio. Neste artigo, iremos apresentar cinco maneiras seguras e duradouras de ganhar dinheiro online que não envolvem investimentos de alto risco...
+            </p>
+            <Link href="artigos/como-ganhar-dinheiro-internet">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+
+            <hr></hr>
+
             <h2>Ganhe Dinheiro com Domínios Web: Uma Oportunidade Lucrativa na Era Digital.</h2>
             <p>
                 Os domínios web tornaram-se uma das muitas maneiras pelas quais as pessoas podem ganhar dinheiro na era digital. Com a proliferação da internet e o crescimento das empresas online, os domínios web transformaram-se em propriedades virtuais muito valorizadas. Este artigo elucidará o conceito de ganhar dinheiro com domínios web e as diversas formas práticas de se fazer isso...
