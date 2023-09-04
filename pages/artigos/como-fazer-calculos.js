@@ -3,6 +3,9 @@ import styles from '@/styles/Home.module.css';
 import TopBar from '@/components/TopBar';
 import stylesMain from '@/styles/Artigos.module.css';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function Default() {
     return (
@@ -78,6 +81,25 @@ export default function Default() {
                         <strong>Escrito por Lucas Santos Rodrigues. Em 10/08/2023.</strong>
                     </p>
                 </div>
+                
+                {process.env.NEXT_PUBLIC_LINK &&
+                    <div className={stylesMain.all}>
+                        <h1>Procurando por uma oferta quentinha?</h1>
+                        <p>
+                            Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas em eletrônicos. Aproveite!
+                        </p>
+                        <span dangerouslySetInnerHTML={{ __html: process.env.NEXT_PUBLIC_LINK }}></span>
+                    </div>
+                }
+
+                <div className={stylesMain.all}>
+                    <h1>Quer fazer parte do maior site de Matemática e Ciência do Brasil e do Mundo?</h1>
+                    <p>
+                        Nós somos o maior site de Matemática e Ciência do Brasil e do Mundo. Ajudamos milhões de pessoas, mas isso tem um custo! Se você gosta do nosso trabalho e quer fazer parte dele, considere nos ajudar com uma doação. Qualquer valor é bem-vindo!
+                    </p>
+                    <Link href="https://donate.stripe.com/cN24gMexc71aakgaEF" target='_blank'>Faça parte do Calcule Pra Mim e doe qualquer valor para ajudar! <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+                </div>
+
             </main>
             <Footer></Footer>
         </div>

@@ -1,7 +1,4 @@
 .Main {
-  background-color: #ffffff95;
-  backdrop-filter: blur(15px);
-  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +7,7 @@
   align-self: center;
   border-radius: 15px;
   margin: 25px 0;
+  width: 100vw;
 }
 
 .Main .all * {
@@ -38,10 +36,20 @@
 }
 
 .Main .all{
+  background-color: #ffffff95;
+  backdrop-filter: blur(15px);
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  align-self: center;
+  border-radius: 15px;
+  margin: 25px 0;
+  width: 800px;
+  max-width: calc(95% - 60px);
+  box-shadow: 2.5px 2.5px 5px #00000050;
 }
 
 .Main .all p {
