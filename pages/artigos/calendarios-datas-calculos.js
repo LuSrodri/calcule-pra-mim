@@ -77,7 +77,7 @@ export default function Default() {
                 
                 {process.env.NEXT_PUBLIC_LINK &&
                     <div className={stylesMain.all}>
-                        <h1>Procurando por uma oferta quentinha?</h1>
+                        <h2>Procurando por uma oferta quentinha?</h2>
                         <p>
                             Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas em eletrônicos. Aproveite!
                         </p>
@@ -86,7 +86,7 @@ export default function Default() {
                 }
 
                 <div className={stylesMain.all}>
-                    <h1>Quer fazer parte do maior site de Matemática e Ciência do Brasil e do Mundo?</h1>
+                    <h2>Quer fazer parte do maior site de Matemática e Ciência do Brasil e do Mundo?</h2>
                     <p>
                         Nós somos o maior site de Matemática e Ciência do Brasil e do Mundo. Ajudamos milhões de pessoas, mas isso tem um custo! Se você gosta do nosso trabalho e quer fazer parte dele, considere nos ajudar com uma doação. Qualquer valor é bem-vindo!
                     </p>

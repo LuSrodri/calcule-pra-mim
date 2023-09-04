@@ -1,5 +1,5 @@
 import styles from '@/styles/Main.module.css';
-import { faAppleWhole, faCalculator, faCalendar, faPercent, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
+import { faAppleWhole, faCalculator, faCalendar, faDollar, faPercent, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from './Card';
 import Link from 'next/link';
@@ -16,6 +16,7 @@ export default function Main() {
                     <Card icon={<FontAwesomeIcon icon={faAppleWhole} />} title={"IMC e Peso Ideal"} path={"/qual-peso-ideal"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faPercent} />} title={"Juros compostos"} path={"/juroscompostos"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faCalendar} />} title={"Diferença entre datas"} path={"/diferencadatas"}></Card>
+                    <Card icon={<FontAwesomeIcon icon={faDollar} />} title={"Dolar para Real"} path={"/dolar"}></Card>
                 </div>
             </div>
 
@@ -61,6 +62,14 @@ export default function Main() {
                 <Link href="artigos/calendarios-datas-calculos">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
 
                 <hr></hr>
+
+                <h2>Ganhar Dinheiro com Câmbio: Um Guia para Lucrar com a Troca de Moedas</h2>
+                <p>
+                    O mercado de câmbio, também conhecido como Forex, é um dos maiores e mais líquidos mercados financeiros do mundo. Trilhões de dólares são negociados entre um grande número de bancos centrais, bancos comerciais, empresas internacionais, governos e instituições financeiras. Este artigo lhe informará sobre como você pode ganhar dinheiro com a troca de moedas...
+                </p>
+                <Link href="artigos/cambio-lucrar-trocas-moedas">Continue lendo <FontAwesomeIcon icon={faUpRightFromSquare} /></Link>
+
+                <hr></hr>
             </div>
 
             <div className={styles.session}>
@@ -93,7 +102,7 @@ export default function Main() {
 
             {process.env.NEXT_PUBLIC_LINK &&
                 <div className={styles.session}>
-                    <h1>Procurando por uma oferta quentinha?</h1>
+                    <h2>Procurando por uma oferta quentinha?</h2>
                     <p>
                         Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas em eletrônicos. Aproveite!
                     </p>
@@ -102,7 +111,7 @@ export default function Main() {
             }
 
             <div className={styles.session}>
-                <h1>Quer fazer parte do maior site de Matemática e Ciência do Brasil e do Mundo?</h1>
+                <h2>Quer fazer parte do maior site de Matemática e Ciência do Brasil e do Mundo?</h2>
                 <p>
                     Nós somos o maior site de Matemática e Ciência do Brasil e do Mundo. Ajudamos milhões de pessoas, mas isso tem um custo! Se você gosta do nosso trabalho e quer fazer parte dele, considere nos ajudar com uma doação. Qualquer valor é bem-vindo!
                 </p>
