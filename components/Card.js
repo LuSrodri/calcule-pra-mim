@@ -7,7 +7,7 @@ export default function Card({ title, icon, path }) {
     return (
         <div className={styles.Card}>
             <Link href={path || "/"}>
-                <h3>{icon || <FontAwesomeIcon icon={faIcons} />} {title || "title"} <FontAwesomeIcon icon={faUpRightFromSquare} /></h3>
+                <h4>{icon || <FontAwesomeIcon icon={faIcons} />} {title || "title"} <FontAwesomeIcon icon={faUpRightFromSquare} /></h4>
             </Link>
         </div>
     );

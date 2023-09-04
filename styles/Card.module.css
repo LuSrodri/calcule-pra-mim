@@ -6,8 +6,10 @@
   justify-content: center;
   align-items: center;
   width: 300px;
-  margin: 25px;
+  max-width: calc(100% - 50px);
+  margin: 15px 5px;
   text-align: center;
+  border-radius: 15px;
 }
 
 .Card:hover {
@@ -21,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  width: calc(100% - 30px);
 }
 
 .Card a,
@@ -30,7 +32,7 @@
   color: unset;
 }
 
-.Card h3 {
+.Card h4 {
   margin: 0;
 }
 
