@@ -7,13 +7,27 @@ export default function Dollar() {
     const [dolarPreco, setDolarPreco] = useState(0);
     const [dolar, setDolar] = useState(1);
     const [real, setReal] = useState(1);
-    
+
+    const [dolarCompra, setDolarCompra] = useState(0);
+    const [dolarVenda, setDolarVenda] = useState(0);
+    const [maiorValor, setMaiorValor] = useState(0);
+    const [menorValor, setMenorValor] = useState(0);
+    const [variacao, setVariacao] = useState(0);
+    const [variacaoPorcentagem, setVariacaoPorcentagem] = useState(0);
+
     useEffect(() => {
         fetch('https://economia.awesomeapi.com.br/last/USD-BRL')
             .then(res => res.json())
             .then(data => {
                 setDolarPreco(data.USDBRL.ask);
                 setReal(real * data.USDBRL.ask);
+
+                setDolarCompra(data.USDBRL.bid);
+                setDolarVenda(data.USDBRL.ask);
+                setMaiorValor(data.USDBRL.high);
+                setMenorValor(data.USDBRL.low);
+                setVariacao(data.USDBRL.varBid);
+                setVariacaoPorcentagem(data.USDBRL.pctChange);
             });
     }, []);
 
@@ -39,6 +53,12 @@ export default function Dollar() {
                         <label><h4>Real</h4> <input onInput={calculaDolar} value={real} type="number" /></label>
                     </div>
                 </div>
+                <p>Valor de <strong>Dolar para compra</strong> é de <strong>R${dolarCompra}</strong></p>
+                <p>Valor de <strong>Dolar para venda</strong> é de <strong>R${dolarVenda}</strong></p>
+                <p>Valor <strong>máximo do Dolar hoje</strong> é de <strong>R${maiorValor}</strong></p>
+                <p>Valor <strong>mínimo do Dolar hoje</strong> é de <strong>R${menorValor}</strong></p>
+                <p>Variação de Dolar é de <strong>R${variacao}</strong></p>
+                <p>Variação de Dolar em porcentagem é de <strong>{variacaoPorcentagem}%</strong></p>
             </div>
         </div>
     );
