@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 import ImcCalculator from '@/components/ImcCalculator';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faDollar, faPercent, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Card from '@/components/Card';
 
 export default function Default() {
     return (
@@ -79,11 +80,20 @@ export default function Default() {
                     <ImcCalculator></ImcCalculator>
                 </div>
                 
+                <div className={stylesMain.all}>
+                    <h2>Veja mais!</h2>
+
+                    <div className={styles.menu}>
+                        <Card icon={<FontAwesomeIcon icon={faPercent} />} title={"Juros Compostos"} path={"/artigos/juros-compostos"}></Card>
+                        <Card icon={<FontAwesomeIcon icon={faDollar} />} title={"Dolar para Real"} path={"/artigos/cambio-lucrar-trocas-moedas"}></Card>
+                    </div>
+                </div>
+
                 {process.env.NEXT_PUBLIC_LINK &&
                     <div className={stylesMain.all}>
                         <h2>Procurando por uma oferta quentinha?</h2>
                         <p>
-                            Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas em eletrônicos. Aproveite!
+                            Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas. Aproveite!
                         </p>
                         <span dangerouslySetInnerHTML={{ __html: process.env.NEXT_PUBLIC_LINK }}></span>
                     </div>

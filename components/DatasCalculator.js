@@ -1,4 +1,4 @@
-import styles from '@/styles/JurosCompostosCalculator.module.css';
+import styles from '@/styles/DiferencaDatas.module.css';
 import { faCalendar, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';

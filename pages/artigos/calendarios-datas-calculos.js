@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 import DatasCalculator from '@/components/DatasCalculator';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faAppleWhole, faDollar, faPercent, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Card from '@/components/Card';
 
 export default function Default() {
     return (
@@ -74,12 +75,22 @@ export default function Default() {
                     <h2>Buscando por uma calculadora de datas? Utilize a nossa!</h2>
                     <DatasCalculator></DatasCalculator>
                 </div>
-                
+
+                <div className={stylesMain.all}>
+                    <h2>Veja mais!</h2>
+
+                    <div className={styles.menu}>
+                        <Card icon={<FontAwesomeIcon icon={faAppleWhole} />} title={"IMC e Peso Ideal"} path={"/artigos/imc-pesoideal"}></Card>
+                        <Card icon={<FontAwesomeIcon icon={faPercent} />} title={"Juros Compostos"} path={"/artigos/juros-compostos"}></Card>
+                        <Card icon={<FontAwesomeIcon icon={faDollar} />} title={"Dolar para Real"} path={"/artigos/cambio-lucrar-trocas-moedas"}></Card>
+                    </div>
+                </div>
+
                 {process.env.NEXT_PUBLIC_LINK &&
                     <div className={stylesMain.all}>
                         <h2>Procurando por uma oferta quentinha?</h2>
                         <p>
-                            Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas em eletrônicos. Aproveite!
+                            Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas. Aproveite!
                         </p>
                         <span dangerouslySetInnerHTML={{ __html: process.env.NEXT_PUBLIC_LINK }}></span>
                     </div>

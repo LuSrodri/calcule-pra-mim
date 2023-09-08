@@ -14,8 +14,8 @@ export default function Main() {
                     <Card icon={<FontAwesomeIcon icon={faCalculator} />} title={"Calculadora Científica"} path={"/cientifica"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faX} />} title={"Calculadora Algébrica"} path={"/algebrica"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faAppleWhole} />} title={"IMC e Peso Ideal"} path={"/qual-peso-ideal"}></Card>
-                    <Card icon={<FontAwesomeIcon icon={faPercent} />} title={"Juros compostos"} path={"/juroscompostos"}></Card>
-                    <Card icon={<FontAwesomeIcon icon={faCalendar} />} title={"Diferença entre datas"} path={"/diferencadatas"}></Card>
+                    <Card icon={<FontAwesomeIcon icon={faPercent} />} title={"Juros Compostos"} path={"/juroscompostos"}></Card>
+                    <Card icon={<FontAwesomeIcon icon={faCalendar} />} title={"Diferença entre Datas"} path={"/diferencadatas"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faDollar} />} title={"Dolar para Real"} path={"/dolar"}></Card>
                 </div>
             </div>
@@ -104,7 +104,7 @@ export default function Main() {
                 <div className={styles.session}>
                     <h2>Procurando por uma oferta quentinha?</h2>
                     <p>
-                        Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas em eletrônicos. Aproveite!
+                        Se você está procurando por uma oferta quentinha, então você está no lugar certo! Acesse o site da Amazon e encontre as melhores ofertas. Aproveite!
                     </p>
                     <span dangerouslySetInnerHTML={{ __html: process.env.NEXT_PUBLIC_LINK }}></span>
                 </div>
