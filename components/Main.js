@@ -1,5 +1,5 @@
 import styles from '@/styles/Main.module.css';
-import { faAppleWhole, faCalculator, faCalendar, faDollar, faPercent, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
+import { faAppleWhole, faCalculator, faCalendar, faDollar, faPercent, faRobot, faUpRightFromSquare, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from './Card';
 import Link from 'next/link';
@@ -11,6 +11,7 @@ export default function Main() {
                 <h1>Acesso rápido</h1>
 
                 <div className={styles.menu}>
+                    <Card icon={<FontAwesomeIcon icon={faRobot} />} title={"Assistente de Matemática"} path={"/assistente-matematica"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faCalculator} />} title={"Calculadora Científica"} path={"/cientifica"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faX} />} title={"Calculadora Algébrica"} path={"/algebrica"}></Card>
                     <Card icon={<FontAwesomeIcon icon={faAppleWhole} />} title={"IMC e Peso Ideal"} path={"/qual-peso-ideal"}></Card>
