@@ -54,7 +54,7 @@ export default function Main() {
                     <h3>Como funciona?</h3>
                     <p>
                         Nós usamos uma inteligência artificial para entender a sua pergunta e te dar a melhor resposta possível.
-                        Basta inserir uma pergunta matemática e clicar em "Fazer pergunta".
+                        Basta inserir uma pergunta matemática e clicar em &quot;Fazer pergunta&quot;.
                         Pegaremos a pergunta, analisaremos através de um modelo de linguagem natural e tentaremos rodar um código em Python para obter a melhor resposta para você.
                     </p>
                 </div>
