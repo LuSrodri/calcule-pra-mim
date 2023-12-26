@@ -2,15 +2,19 @@
 
 * {
   font-family: 'Noto Sans', sans-serif;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
-html,
+html {
+  overflow-x: hidden;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin: 0;
 }
 
@@ -22,7 +26,7 @@ a {
   text-decoration: none;
   font-size: 1rem;
   text-align: center;
-  display: block;
+  margin: 15px;
 }
 
 input::-webkit-outer-spin-button,
