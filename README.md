@@ -1,3 +1,5 @@
+![Calcule Pra Mim](/calculepramim.png)
+
 This is a [Next.js](https://nextjs.org/) project with useful calculators bootstrapped by [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
